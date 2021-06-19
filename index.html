@@ -1,0 +1,75 @@
+<!--
+*********************************************************************************
+* Noms : Patrick Bonini, Owen Chatland, Jepheron Fenelon                        *
+* Année d'étude : 11e Année                                                     *
+* Courriel : bonpat13@ecolecatholque.ca , chaowe22@", fenmcc06@"                *
+* Titre : PROJET FINAL - Création d'un jeu                                      *
+* Cours : ICS3U - Génie informatique                                            *
+* Date : le vendredi 11 juin 2021                                               *
+*********************************************************************************
+-->
+<!doctype html>
+<html>
+  <head>
+    <title>Jeu bonhomme pendu</title>
+    <!-- CSS tags pour améliorer l'apparence du site web -->
+    <style>
+      body {
+        background-color: black;
+       color: white;
+       text-align: center;
+       
+      }
+
+      h1 {
+       color: white;
+       text-align: center;
+       text-decoration: underline;
+     }
+
+     p {
+      margin-left: 60px;
+      margin-right: 60px;
+     }
+
+     input[type=submit]{
+        background-color: black;
+        border: solid;
+        color: white;
+        margin: 4px 2px;
+        cursor: pointer;
+      } 
+      
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    
+    </style>
+  </head>
+  <body>
+    <!-- Titre -->
+    <h1><em><strong>Jeu de bonhomme pendu</em></strong></h1>
+    <!-- Image du bonhomme pendu -->
+    <img src="https://cruciverbiste.com/wp-content/uploads/2016/01/le-pendu.png" alt="bnohomme pendu" width="200" class="center"><br><br>
+    <!-- Description du jeu -->
+    <p>
+      Description : L’utilisateur choisit des lettres pour essayer de deviner un mot généré par l’ordinateur, chaque bonne devinette lui rapproche du mot et chaque mauvaise dessiner graduellement le bonhomme pendu. Si le bonhomme est terminer avant que tous les lettres sont deviner l'utilisateur a perdu sinon il gagne.
+    </p>
+
+      <!-- Boutton pour commencer le jeu -->
+      <form action="facile.html">
+      <!-- Mots plus faciles et le choix d'avoir un indice -->
+      Difficulté: facile <input type="submit" value="Commencez le jeu!" />
+      </form>
+      <form action="difficile.html">
+        <!-- Mots difficiles et pas le choix pour un indice -->
+      Difficulté: impossible <input type="submit" value="Commencez le jeu!" />
+      </form>
+      
+    
+ 
+  </body>
+</html>
