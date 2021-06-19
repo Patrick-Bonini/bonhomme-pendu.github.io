@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jeu bonhomme pendu</title>
+    <!-- CSS tags pour améloirer l'apparence du jeu -->
+    <style>
+      body {
+       background-color: black;
+       color: white;
+       text-align: center;      
+      }
+
+      h1 {
+       color: white;
+       text-align: center;
+       text-decoration: underline;
+     }
+
+     input[type=submit]{
+        background-color: black;
+        border: solid;
+        color: white;
+        margin: 4px 2px;
+        cursor: pointer;
+      } 
+      
+      img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- container div -->
+    <div class="container">
+      <!-- Titre -->
+      <h1 class="text-center">Bonhomme pendu</h1>
+      <!-- Compteur du nombre d'erreures -->
+      <div class="float-right">Erreures: <span id='erreures'>0</span> de <span id='maxErreures'>7</span></div>
+      
+      <!-- div class pour center le text -->
+      <div class="text-center">
+        <!-- photo du bonhomme pendu dans le jeu -->
+        <img id="photoBonhomme" src="https://www.cs.cmu.edu/~cburch/hang/hang00.gif" alt="bonhommePendu">
+        <!-- div qui dit si l'uitlisateur a gagné ou perdu -->
+        <p id="gagneOuPerd">
+        <!-- div qui affiche le mot à deviner -->
+        <p id="mot"></p>
+        <!-- div qui affiche les indices -->
+        <p id ="indice"></P>
+        <!-- div pour afficher le mot si tu as perdu -->
+        <p id="motFin"></p>
+        <!-- Tout les bouttons ci-dessous sont les bouttons pour le clavier -->
+        <button id="q" onClick="clavier('Q')" >Q</button>
+        <button id="w" onClick="clavier('W')" >W</button>
+        <button id="e" onClick="clavier('E')" >E</button>
+        <button id="r" onClick="clavier('R')" >R</button>
+        <button id="t" onClick="clavier('T')" >T</button>
+        <button id="y" onClick="clavier('Y')" >Y</button>
+        <button id="u" onClick="clavier('U')" >U</button>
+        <button id="i" onClick="clavier('I')" >I</button>
+        <button id="o" onClick="clavier('O')" >O</button>
+        <button id="p" onClick="clavier('P')" >P</button>
+        <br>
+        <button id="a" onClick="clavier('A')" >A</button>
+        <button id="s" onClick="clavier('S')" >S</button>
+        <button id="d" onClick="clavier('D')" >D</button>
+        <button id="f" onClick="clavier('F')" >F</button>
+        <button id="g" onClick="clavier('G')" >G</button>
+        <button id="h" onClick="clavier('H')" >H</button>
+        <button id="j" onClick="clavier('J')" >J</button>
+        <button id="k" onClick="clavier('K')" >K</button>
+        <button id="l" onClick="clavier('L')" >L</button>
+        <br>
+        <button id="z" onClick="clavier('Z')" >Z</button>
+        <button id="x" onClick="clavier('X')" >X</button>
+        <button id="c" onClick="clavier('C')" >C</button>
+        <button id="v" onClick="clavier('V')" >V</button>
+        <button id="b" onClick="clavier('B')" >B</button>
+        <button id="n" onClick="clavier('N')" >N</button>
+        <button id="m" onClick="clavier('M')" >M</button> 
+        <br><br>
+       
+        <!-- boutton pour demander pour un indice -->
+        <button onClick="getIndice()">Indice</button>
+        <!-- boutton pour recommencer le jeu -->
+        <button onClick="window.location.reload()">Recommence</button>
+        <!-- boutton pour retourner au menu -->
+        <button onClick="history.back()">Retour</button>
+      </div>
+    </div>
+
+    <!-- fait appelle à script.js -->
+    <script src="facile.js"></script>
+  </body>
+</html>
